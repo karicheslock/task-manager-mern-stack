@@ -17,9 +17,6 @@ const taskSchema = mongoose.Schema(
         },
         comments: {
             type: String
-        },
-        isCompleted: {
-            type: Boolean
         }
     },
     {

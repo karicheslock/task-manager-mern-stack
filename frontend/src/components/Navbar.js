@@ -12,7 +12,7 @@ function Navbar() {
     const onLogout = () => {
         dispatch(logout())
         dispatch(reset())
-        navigate('/login')
+        navigate('/')
     }
 
   return (    
@@ -22,7 +22,7 @@ function Navbar() {
             </div>
                 {user ? (
                     <div className='container flex px-10 items-center justify-end'>
-                        <p className='border-4 rounded border-sky-500 shadow-2xl shadow-gray-900 py-2 ml-5 bg-white px-4 mb-2 text-blue-700 font-bold text-lg mt-2 mr-4'><Link to='/create-book'>Add a task</Link></p>
+                        <p className='border-4 rounded border-sky-500 shadow-2xl shadow-gray-900 py-2 ml-5 bg-white px-4 mb-2 text-blue-700 font-bold font-mono text-lg mt-2 mr-4 hover:px-6 hover:py-4 hover:text-2xl'><Link to='/create-book'>Add a task</Link></p>
                         <button onClick={onLogout}>
                             <div className='flex px-5 items-center'>
                                 <FaSignOutAlt className='text-blue-700' /> 
