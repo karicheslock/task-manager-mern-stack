@@ -86,6 +86,7 @@ function EditTaskForm() {
                         <label className='text-blue-800 font-mono pl-2 mt-2' htmlFor='comments'>Comments</label>
                         <textarea 
                             type='text'
+                            maxLength='100'
                             className='px-2 pt-3 font-mono w-full border-dashed border-blue-800 border-b-2 mb-2 h-32' 
                             name='comments'
                             id='comments'
